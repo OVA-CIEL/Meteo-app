@@ -12,7 +12,8 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 			int timestampMin = 0;
 			int timestampMax = 0;
 			int nbPoint = 1;
-			char val[5] = "ffff";
+			char val[5];
+			char* json_response = NULL;
 
 			const char* ParamTimestampMin = MHD_lookup_connection_value(connection, MHD_GET_ARGUMENT_KIND, "timestampMin");
 			const char* ParamTimestampMax = MHD_lookup_connection_value(connection, MHD_GET_ARGUMENT_KIND, "timestampMax");
@@ -22,49 +23,56 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 			if (ParamTimestampMin != NULL) {
 				timestampMin = atoi(ParamTimestampMin);
 			}
-			else if (atoi(ParamTimestampMax) == -1) {
+			else 
+			{
 				timestampMin = -1;
 			}
+
 			if (ParamTimestampMax != NULL) {
 				timestampMax = atoi(ParamTimestampMax);
 			}
-			else {
+			else 
+			{
 				timestampMax = -1;
 			}
-			if (ParamNbPoint != NULL) {
+
+			if (ParamNbPoint != NULL) 
+			{
 				nbPoint = atoi(ParamNbPoint);
 			}
-			else {
+			else 
+			{
 				nbPoint = 1;
 			}
-			if (ParamVal != NULL) {
-				if (strcmp(ParamVal, "temp") == 0) {
-					strcpy(val, "temp");
-				}
-				else if (strcmp(ParamVal, "humi") == 0) {
-					strcpy(val, "humi");
-				}
-				else if (strcmp(ParamVal, "pres") == 0) {
-					strcpy(val, "pres");
-				}
-				else {
-					strcpy(val, "ffff");
-				}
-			}
-			else {
-				strcpy(val, "ffff");
-			}
 
+			if (ParamVal != NULL)
+			{
+				strcpy(val, ParamVal);
+				json_response = get_json_data_loc(timestampMin, timestampMax, nbPoint, val);
+			}
+			else
+			{
+				json_response = erreur_data();
+			}
 			// Générer les données en JSON
+			
+			printf(json_response);
 
+			struct MHD_Response* response = MHD_create_response_from_buffer(strlen(json_response), (void*)json_response, MHD_RESPMEM_MUST_FREE);
+			MHD_add_response_header(response, "Content-Type", "application/json");
+			MHD_add_response_header(response, "Access-Control-Allow-Origin", "*"); // Autoriser les requetes cross-origin
 
+			// Envoyer la réponse
+			int ret = MHD_queue_response(connection, MHD_HTTP_OK, response);
+
+			MHD_destroy_response(response);
 
 			return MHD_YES;
 		}
 		
-		
+		return MHD_NO;
 	}
-
+	return MHD_NO;
 
 	
 	/*if (strcmp(method, "GET") == 0) {

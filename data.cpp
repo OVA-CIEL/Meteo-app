@@ -153,6 +153,8 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
 
 	// Ajouter les données
 
+    printf(val);
+
 	if (strcmp(val, "temp") == 0)
 	{
         if (timestampMin == -1 || timestampMax == -1)
@@ -169,6 +171,7 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
                 snprintf(query, sizeof(query), "SELECT temperature FROM data WHERE temps BETWEEN %d AND %d", timestampMin, timestampMax);
                 database_recup_data(query, &ligne, &resultat);
 
+                json_object_object_add(json, "erreur", json_object_new_boolean(false));
                 json_object_object_add(json, "timestampMin", json_object_new_int(timestampMin));
                 json_object_object_add(json, "timestampMax", json_object_new_int(timestampMax));
                 json_object_object_add(json, "dataType", json_object_new_string("temp"));
@@ -209,7 +212,7 @@ void simple_data(json_object* json,double valeur)
     json_object_object_add(json, "temperature", json_object_new_double(valeur));
 }
 
-void complex_data(json_object* json, int* Point, int nbPoint, int ligne)
+double complex_data(json_object* json, int* Point, int nbPoint, int ligne)
 {
     double ratio = ligne / nbPoint;
 
@@ -236,24 +239,46 @@ void complex_data(json_object* json, int* Point, int nbPoint, int ligne)
                 moyenne = moyenne + Point[j];
                 block_nombre_interne++;
             }
-            resultat = (block_moyenne / block_nombre_interne);
+            resultat = block_moyenne / block_nombre_interne / 100;
 
             char str[25];
             sprintf(str, "%d", i);
 
-            json_object_object_add(json, str, json_object_new_double(resultat));
+            json_object_array_add(json, json_object_new_double((float)resultat));
         }
 
-        moyenne = moyenne / ligne;
-        json_object_object_add(json, "moyenne", json_object_new_double(moyenne));
+        moyenne = moyenne / ligne / 100;
+        return moyenne;
 
     }
     else if (ratio < 1 && ratio != 0)
     {
-        return;
+        return 0;
     }
     else
     {
-        return;
+        return 0;
     }
+}
+
+char* erreur_data()
+{
+    // Créer un objet JSON
+    json_object* json = json_object_new_object();
+
+    // Ajouter les données
+    json_object_object_add(json, "erreur", json_object_new_boolean(true));
+
+    // Convertir l'objet JSON en chaîne de caractères
+    const char* json_str = json_object_to_json_string(json);
+    char* json_response = (char*)malloc(strlen(json_str) + 1);
+    if (json_response != NULL)
+    {
+        strcpy(json_response, json_str);
+    }
+
+    // Libérer la mémoire
+    json_object_put(json);
+
+    return json_response;
 }

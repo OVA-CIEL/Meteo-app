@@ -7,6 +7,7 @@
 #include<stdarg.h>
 #include<thread>
 #include<string.h>
+#include<math.h>
 using namespace std;
 
 //bibliothèques pour la base de données

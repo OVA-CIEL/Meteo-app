@@ -23,8 +23,10 @@ char* get_json_live_temperature();
 char* get_json_live_humidite();
 char* get_json_live_pression();
 char* get_json_live_essentials_data();
+char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char val[5]);
 void simple_data(json_object* json, double valeur);
-void complex_data(json_object* json, int* Point, int nbPoint, int ligne);
+double complex_data(json_object* json, int* Point, int nbPoint, int ligne);
+char* erreur_data();
 
 //fonction de l'API http
 int http_api();
