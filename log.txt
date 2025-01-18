@@ -140,3 +140,309 @@
 [17/01/2025 21:05:35] [INFO] Initialisation de la connection réseaux
 [17/01/2025 21:05:35] [INFO] Le serveur est initialisé
 [17/01/2025 21:05:35] [INFO] Mise en écoute du serveur
+[18/01/2025 14:11:01] [INFO] Démarrage du programme
+[18/01/2025 14:11:01] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:11:01] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:11:01] [INFO] Le serveur est initialisé
+[18/01/2025 14:11:01] [INFO] Mise en écoute du serveur
+[18/01/2025 14:12:57] [INFO] Démarrage du programme
+[18/01/2025 14:12:57] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:12:57] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:12:57] [INFO] Le serveur est initialisé
+[18/01/2025 14:12:57] [INFO] Mise en écoute du serveur
+[18/01/2025 14:14:07] [INFO] Démarrage du programme
+[18/01/2025 14:14:07] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:14:07] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:14:07] [INFO] Le serveur est initialisé
+[18/01/2025 14:14:07] [INFO] Mise en écoute du serveur
+[18/01/2025 14:15:06] [INFO] Démarrage du programme
+[18/01/2025 14:15:07] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:15:07] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:15:07] [INFO] Le serveur est initialisé
+[18/01/2025 14:15:07] [INFO] Mise en écoute du serveur
+[18/01/2025 14:16:56] [INFO] Démarrage du programme
+[18/01/2025 14:16:56] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:16:56] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:16:56] [INFO] Le serveur est initialisé
+[18/01/2025 14:16:56] [INFO] Mise en écoute du serveur
+[18/01/2025 14:17:19] [INFO] Démarrage du programme
+[18/01/2025 14:17:19] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:17:19] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:17:19] [INFO] Le serveur est initialisé
+[18/01/2025 14:17:19] [INFO] Mise en écoute du serveur
+[18/01/2025 14:17:56] [INFO] Démarrage du programme
+[18/01/2025 14:17:56] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:17:56] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:17:56] [INFO] Le serveur est initialisé
+[18/01/2025 14:17:56] [INFO] Mise en écoute du serveur
+[18/01/2025 14:18:06] [INFO] Démarrage du programme
+[18/01/2025 14:18:26] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:18:26] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:18:26] [INFO] Le serveur est initialisé
+[18/01/2025 14:18:26] [INFO] Mise en écoute du serveur
+[18/01/2025 14:18:42] [INFO] Démarrage du programme
+[18/01/2025 14:18:42] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:18:42] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:18:42] [INFO] Le serveur est initialisé
+[18/01/2025 14:18:42] [INFO] Mise en écoute du serveur
+[18/01/2025 14:19:33] [INFO] Démarrage du programme
+[18/01/2025 14:19:33] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:19:33] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:19:33] [INFO] Le serveur est initialisé
+[18/01/2025 14:19:33] [INFO] Mise en écoute du serveur
+[18/01/2025 14:19:47] [INFO] Démarrage du programme
+[18/01/2025 14:19:47] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:19:47] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:19:47] [INFO] Le serveur est initialisé
+[18/01/2025 14:19:47] [INFO] Mise en écoute du serveur
+[18/01/2025 14:21:52] [INFO] Démarrage du programme
+[18/01/2025 14:21:52] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:21:52] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:21:52] [INFO] Le serveur est initialisé
+[18/01/2025 14:21:52] [INFO] Mise en écoute du serveur
+[18/01/2025 14:26:01] [INFO] Démarrage du programme
+[18/01/2025 14:26:02] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:26:02] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:26:02] [INFO] Le serveur est initialisé
+[18/01/2025 14:26:02] [INFO] Mise en écoute du serveur
+[18/01/2025 14:26:55] [INFO] Démarrage du programme
+[18/01/2025 14:26:55] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:26:55] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:26:55] [INFO] Le serveur est initialisé
+[18/01/2025 14:26:55] [INFO] Mise en écoute du serveur
+[18/01/2025 14:27:00] [INFO] Démarrage du programme
+[18/01/2025 14:27:00] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:27:00] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:27:00] [INFO] Le serveur est initialisé
+[18/01/2025 14:27:00] [INFO] Mise en écoute du serveur
+[18/01/2025 14:27:14] [INFO] Démarrage du programme
+[18/01/2025 14:27:14] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:27:14] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:27:14] [INFO] Le serveur est initialisé
+[18/01/2025 14:27:14] [INFO] Mise en écoute du serveur
+[18/01/2025 14:27:53] [INFO] Démarrage du programme
+[18/01/2025 14:27:53] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:27:53] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:27:53] [INFO] Le serveur est initialisé
+[18/01/2025 14:27:53] [INFO] Mise en écoute du serveur
+[18/01/2025 14:29:00] [INFO] Démarrage du programme
+[18/01/2025 14:29:31] [INFO] Démarrage du programme
+[18/01/2025 14:29:32] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:29:32] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:29:32] [INFO] Le serveur est initialisé
+[18/01/2025 14:29:32] [INFO] Mise en écoute du serveur
+[18/01/2025 14:31:05] [INFO] Démarrage du programme
+[18/01/2025 14:31:06] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:31:06] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:31:06] [INFO] Le serveur est initialisé
+[18/01/2025 14:31:06] [INFO] Mise en écoute du serveur
+[18/01/2025 14:32:41] [INFO] Démarrage du programme
+[18/01/2025 14:32:41] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:32:41] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:32:41] [INFO] Le serveur est initialisé
+[18/01/2025 14:32:41] [INFO] Mise en écoute du serveur
+[18/01/2025 14:32:58] [INFO] Démarrage du programme
+[18/01/2025 14:32:59] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:32:59] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:32:59] [INFO] Le serveur est initialisé
+[18/01/2025 14:32:59] [INFO] Mise en écoute du serveur
+[18/01/2025 14:53:14] [INFO] Démarrage du programme
+[18/01/2025 14:53:14] [INFO] Le serveur HTTP est démarré
+[18/01/2025 14:53:14] [INFO] Initialisation de la connection réseaux
+[18/01/2025 14:53:14] [INFO] Le serveur est initialisé
+[18/01/2025 14:53:14] [INFO] Mise en écoute du serveur
+[18/01/2025 15:15:19] [INFO] Démarrage du programme
+[18/01/2025 15:15:20] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:15:20] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:15:20] [INFO] Le serveur est initialisé
+[18/01/2025 15:15:20] [INFO] Mise en écoute du serveur
+[18/01/2025 15:16:00] [INFO] Démarrage du programme
+[18/01/2025 15:16:01] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:16:01] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:16:01] [INFO] Le serveur est initialisé
+[18/01/2025 15:16:01] [INFO] Mise en écoute du serveur
+[18/01/2025 15:16:55] [INFO] Démarrage du programme
+[18/01/2025 15:16:55] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:16:55] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:16:55] [INFO] Le serveur est initialisé
+[18/01/2025 15:16:55] [INFO] Mise en écoute du serveur
+[18/01/2025 15:17:43] [INFO] Démarrage du programme
+[18/01/2025 15:17:43] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:17:43] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:17:43] [INFO] Le serveur est initialisé
+[18/01/2025 15:17:43] [INFO] Mise en écoute du serveur
+[18/01/2025 15:19:52] [INFO] Démarrage du programme
+[18/01/2025 15:19:52] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:19:52] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:19:52] [INFO] Le serveur est initialisé
+[18/01/2025 15:19:52] [INFO] Mise en écoute du serveur
+[18/01/2025 15:20:12] [INFO] Démarrage du programme
+[18/01/2025 15:20:12] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:20:12] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:20:12] [INFO] Le serveur est initialisé
+[18/01/2025 15:20:12] [INFO] Mise en écoute du serveur
+[18/01/2025 15:22:36] [INFO] Démarrage du programme
+[18/01/2025 15:22:37] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:22:37] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:22:37] [INFO] Le serveur est initialisé
+[18/01/2025 15:22:37] [INFO] Mise en écoute du serveur
+[18/01/2025 15:23:18] [INFO] Démarrage du programme
+[18/01/2025 15:23:19] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:23:19] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:23:19] [INFO] Le serveur est initialisé
+[18/01/2025 15:23:19] [INFO] Mise en écoute du serveur
+[18/01/2025 15:23:46] [INFO] Démarrage du programme
+[18/01/2025 15:23:46] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:23:46] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:23:46] [INFO] Le serveur est initialisé
+[18/01/2025 15:23:46] [INFO] Mise en écoute du serveur
+[18/01/2025 15:24:49] [INFO] Démarrage du programme
+[18/01/2025 15:24:50] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:24:50] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:24:50] [INFO] Le serveur est initialisé
+[18/01/2025 15:24:50] [INFO] Mise en écoute du serveur
+[18/01/2025 15:25:12] [INFO] Démarrage du programme
+[18/01/2025 15:25:12] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:25:12] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:25:12] [INFO] Le serveur est initialisé
+[18/01/2025 15:25:12] [INFO] Mise en écoute du serveur
+[18/01/2025 15:26:59] [INFO] Démarrage du programme
+[18/01/2025 15:27:00] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:27:00] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:27:00] [INFO] Le serveur est initialisé
+[18/01/2025 15:27:00] [INFO] Mise en écoute du serveur
+[18/01/2025 15:27:46] [INFO] Démarrage du programme
+[18/01/2025 15:27:46] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:27:46] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:27:46] [INFO] Le serveur est initialisé
+[18/01/2025 15:27:46] [INFO] Mise en écoute du serveur
+[18/01/2025 15:28:06] [INFO] Démarrage du programme
+[18/01/2025 15:28:06] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:28:06] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:28:06] [INFO] Le serveur est initialisé
+[18/01/2025 15:28:06] [INFO] Mise en écoute du serveur
+[18/01/2025 15:28:22] [INFO] Démarrage du programme
+[18/01/2025 15:28:23] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:28:23] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:28:23] [INFO] Le serveur est initialisé
+[18/01/2025 15:28:23] [INFO] Mise en écoute du serveur
+[18/01/2025 15:28:45] [INFO] Démarrage du programme
+[18/01/2025 15:28:45] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:28:45] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:28:45] [INFO] Le serveur est initialisé
+[18/01/2025 15:28:45] [INFO] Mise en écoute du serveur
+[18/01/2025 15:31:23] [INFO] Démarrage du programme
+[18/01/2025 15:31:23] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:31:23] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:31:23] [INFO] Le serveur est initialisé
+[18/01/2025 15:31:23] [INFO] Mise en écoute du serveur
+[18/01/2025 15:34:01] [INFO] Démarrage du programme
+[18/01/2025 15:34:01] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:34:01] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:34:01] [INFO] Le serveur est initialisé
+[18/01/2025 15:34:01] [INFO] Mise en écoute du serveur
+[18/01/2025 15:36:21] [INFO] Démarrage du programme
+[18/01/2025 15:36:21] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:36:21] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:36:21] [INFO] Le serveur est initialisé
+[18/01/2025 15:36:21] [INFO] Mise en écoute du serveur
+[18/01/2025 15:36:36] [INFO] Démarrage du programme
+[18/01/2025 15:36:36] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:36:36] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:36:36] [INFO] Le serveur est initialisé
+[18/01/2025 15:36:36] [INFO] Mise en écoute du serveur
+[18/01/2025 15:42:39] [INFO] Démarrage du programme
+[18/01/2025 15:42:39] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:42:39] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:42:39] [INFO] Le serveur est initialisé
+[18/01/2025 15:42:39] [INFO] Mise en écoute du serveur
+[18/01/2025 15:43:39] [INFO] Démarrage du programme
+[18/01/2025 15:43:39] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:43:39] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:43:39] [INFO] Le serveur est initialisé
+[18/01/2025 15:43:39] [INFO] Mise en écoute du serveur
+[18/01/2025 15:46:40] [INFO] Démarrage du programme
+[18/01/2025 15:46:40] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:46:40] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:46:40] [INFO] Le serveur est initialisé
+[18/01/2025 15:46:40] [INFO] Mise en écoute du serveur
+[18/01/2025 15:47:01] [INFO] Démarrage du programme
+[18/01/2025 15:47:02] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:47:02] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:47:02] [INFO] Le serveur est initialisé
+[18/01/2025 15:47:02] [INFO] Mise en écoute du serveur
+[18/01/2025 15:51:32] [INFO] Démarrage du programme
+[18/01/2025 15:51:33] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:51:33] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:51:33] [INFO] Le serveur est initialisé
+[18/01/2025 15:51:33] [INFO] Mise en écoute du serveur
+[18/01/2025 15:53:51] [INFO] Démarrage du programme
+[18/01/2025 15:53:51] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:53:51] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:53:51] [INFO] Le serveur est initialisé
+[18/01/2025 15:53:51] [INFO] Mise en écoute du serveur
+[18/01/2025 15:56:32] [INFO] Démarrage du programme
+[18/01/2025 15:56:33] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:56:33] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:56:33] [INFO] Le serveur est initialisé
+[18/01/2025 15:56:33] [INFO] Mise en écoute du serveur
+[18/01/2025 15:57:02] [INFO] Démarrage du programme
+[18/01/2025 15:57:02] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:57:02] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:57:02] [INFO] Le serveur est initialisé
+[18/01/2025 15:57:02] [INFO] Mise en écoute du serveur
+[18/01/2025 15:57:19] [INFO] Démarrage du programme
+[18/01/2025 15:57:19] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:57:19] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:57:19] [INFO] Le serveur est initialisé
+[18/01/2025 15:57:19] [INFO] Mise en écoute du serveur
+[18/01/2025 15:58:05] [INFO] Démarrage du programme
+[18/01/2025 15:58:05] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:58:05] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:58:05] [INFO] Le serveur est initialisé
+[18/01/2025 15:58:05] [INFO] Mise en écoute du serveur
+[18/01/2025 15:59:02] [INFO] Démarrage du programme
+[18/01/2025 15:59:02] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:59:02] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:59:02] [INFO] Le serveur est initialisé
+[18/01/2025 15:59:02] [INFO] Mise en écoute du serveur
+[18/01/2025 15:59:38] [INFO] Démarrage du programme
+[18/01/2025 15:59:39] [INFO] Le serveur HTTP est démarré
+[18/01/2025 15:59:39] [INFO] Initialisation de la connection réseaux
+[18/01/2025 15:59:39] [INFO] Le serveur est initialisé
+[18/01/2025 15:59:39] [INFO] Mise en écoute du serveur
+[18/01/2025 16:00:55] [INFO] Démarrage du programme
+[18/01/2025 16:00:56] [INFO] Le serveur HTTP est démarré
+[18/01/2025 16:00:56] [INFO] Initialisation de la connection réseaux
+[18/01/2025 16:00:56] [INFO] Le serveur est initialisé
+[18/01/2025 16:00:56] [INFO] Mise en écoute du serveur
+[18/01/2025 16:04:10] [INFO] Démarrage du programme
+[18/01/2025 16:04:11] [INFO] Le serveur HTTP est démarré
+[18/01/2025 16:04:11] [INFO] Initialisation de la connection réseaux
+[18/01/2025 16:04:11] [INFO] Le serveur est initialisé
+[18/01/2025 16:04:11] [INFO] Mise en écoute du serveur
+[18/01/2025 16:04:33] [INFO] Démarrage du programme
+[18/01/2025 16:04:33] [INFO] Le serveur HTTP est démarré
+[18/01/2025 16:04:33] [INFO] Initialisation de la connection réseaux
+[18/01/2025 16:04:33] [INFO] Le serveur est initialisé
+[18/01/2025 16:04:33] [INFO] Mise en écoute du serveur
+[18/01/2025 16:08:46] [INFO] Démarrage du programme
+[18/01/2025 16:08:46] [INFO] Le serveur HTTP est démarré
+[18/01/2025 16:08:46] [INFO] Initialisation de la connection réseaux
+[18/01/2025 16:08:46] [INFO] Le serveur est initialisé
+[18/01/2025 16:08:46] [INFO] Mise en écoute du serveur
+[18/01/2025 16:09:21] [INFO] Démarrage du programme
+[18/01/2025 16:09:22] [INFO] Le serveur HTTP est démarré
+[18/01/2025 16:09:22] [INFO] Initialisation de la connection réseaux
+[18/01/2025 16:09:22] [INFO] Le serveur est initialisé
+[18/01/2025 16:09:22] [INFO] Mise en écoute du serveur
+[18/01/2025 16:10:45] [INFO] Démarrage du programme
+[18/01/2025 16:10:45] [INFO] Le serveur HTTP est démarré
+[18/01/2025 16:10:45] [INFO] Initialisation de la connection réseaux
+[18/01/2025 16:10:45] [INFO] Le serveur est initialisé
+[18/01/2025 16:10:45] [INFO] Mise en écoute du serveur
+[18/01/2025 16:11:56] [INFO] Démarrage du programme
+[18/01/2025 16:11:56] [INFO] Le serveur HTTP est démarré
+[18/01/2025 16:11:56] [INFO] Initialisation de la connection réseaux
+[18/01/2025 16:11:56] [INFO] Le serveur est initialisé
+[18/01/2025 16:11:56] [INFO] Mise en écoute du serveur
