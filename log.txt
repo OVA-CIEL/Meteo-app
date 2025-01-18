@@ -1,0 +1,142 @@
+[25/12/2024 22:55:20] [INFO] Démarrage du programme
+[25/12/2024 22:55:20] [INFO] Initialisation de la connection réseaux
+[25/12/2024 22:55:20] [INFO] Le serveur est initialisé
+[25/12/2024 22:55:20] [INFO] Le serveur HTTP est démarré
+[25/12/2024 22:55:20] [INFO] Mise en écoute du serveur
+[25/12/2024 22:56:19] [INFO] Démarrage du programme
+[25/12/2024 22:56:19] [INFO] Initialisation de la connection réseaux
+[25/12/2024 22:56:19] [INFO] Le serveur est initialisé
+[25/12/2024 22:56:19] [INFO] Le serveur HTTP est démarré
+[25/12/2024 22:56:19] [INFO] Mise en écoute du serveur
+[25/12/2024 22:59:00] [INFO] Démarrage du programme
+[25/12/2024 22:59:00] [INFO] Initialisation de la connection réseaux
+[25/12/2024 22:59:00] [INFO] Le serveur est initialisé
+[25/12/2024 22:59:00] [INFO] Le serveur HTTP est démarré
+[25/12/2024 22:59:00] [INFO] Mise en écoute du serveur
+[25/12/2024 22:59:04] [INFO] T:2.97/H:74.20/P:96653.00/G:37959.00
+[25/12/2024 22:59:04] [INFO] Traitement des données
+[25/12/2024 22:59:04] [INFO] Données traitées
+[25/12/2024 22:59:04] [INFO] 
+
+[25/12/2024 22:59:04] [INFO] Traitement des données
+[25/12/2024 22:59:04] [WARNING] Données reçues incorrectes
+[25/12/2024 22:59:09] [ERREUR] Impossible de recevoir les données du client
+[25/12/2024 22:59:09] [INFO] Fermeture de la connection réseaux
+[25/12/2024 23:02:22] [INFO] Démarrage du programme
+[25/12/2024 23:02:22] [INFO] Initialisation de la connection réseaux
+[25/12/2024 23:02:22] [INFO] Le serveur est initialisé
+[25/12/2024 23:02:22] [INFO] Le serveur HTTP est démarré
+[25/12/2024 23:02:22] [INFO] Mise en écoute du serveur
+[25/12/2024 23:02:22] [INFO] T:2.31/H:75.34/P:96654.00/G:36335.00
+[25/12/2024 23:02:22] [INFO] Traitement des données
+[25/12/2024 23:02:22] [INFO] Données traitées
+[25/12/2024 23:02:22] [INFO] 
+
+[25/12/2024 23:02:22] [INFO] Traitement des données
+[25/12/2024 23:02:22] [WARNING] Données reçues incorrectes
+[25/12/2024 23:02:27] [ERREUR] Impossible de recevoir les données du client
+[25/12/2024 23:02:27] [INFO] Mise en écoute du serveur
+[25/12/2024 23:09:03] [INFO] Démarrage du programme
+[25/12/2024 23:09:03] [INFO] Initialisation de la connection réseaux
+[25/12/2024 23:09:03] [INFO] Le serveur est initialisé
+[25/12/2024 23:09:03] [INFO] Le serveur HTTP est démarré
+[25/12/2024 23:09:03] [INFO] Mise en écoute du serveur
+[25/12/2024 23:09:03] [INFO] T:-0.32/H:82.30/P:96667.00/G:31399.00
+[25/12/2024 23:09:03] [INFO] Traitement des données
+[25/12/2024 23:09:03] [INFO] Données traitées
+[25/12/2024 23:09:03] [INFO] 
+
+[25/12/2024 23:09:03] [INFO] Traitement des données
+[25/12/2024 23:09:03] [WARNING] Données reçues incorrectes
+[25/12/2024 23:09:08] [ERREUR] Impossible de recevoir les données du client
+[25/12/2024 23:09:08] [INFO] Mise en écoute du serveur
+[25/12/2024 23:10:53] [INFO] Démarrage du programme
+[25/12/2024 23:10:53] [INFO] Le serveur HTTP est démarré
+[25/12/2024 23:10:53] [INFO] Initialisation de la connection réseaux
+[25/12/2024 23:10:53] [INFO] Le serveur est initialisé
+[25/12/2024 23:10:53] [INFO] Mise en écoute du serveur
+[25/12/2024 23:10:56] [INFO] T:-0.56/H:82.53/P:96668.00/G:28692.00
+[25/12/2024 23:10:56] [INFO] Traitement des données
+[25/12/2024 23:10:56] [INFO] Données traitées
+[25/12/2024 23:10:56] [INFO] 
+
+[25/12/2024 23:10:56] [INFO] Traitement des données
+[25/12/2024 23:10:56] [WARNING] Données reçues incorrectes
+[25/12/2024 23:11:01] [ERREUR] Impossible de recevoir les données du client
+[25/12/2024 23:11:01] [INFO] Fermeture de la connection réseaux
+[25/12/2024 23:11:01] [INFO] Initialisation de la connection réseaux
+[25/12/2024 23:11:01] [INFO] Le serveur est initialisé
+[25/12/2024 23:11:01] [INFO] Mise en écoute du serveur
+[25/12/2024 23:11:26] [INFO] T:-0.57/H:82.68/P:96669.00/G:28891.00
+[25/12/2024 23:11:26] [INFO] Traitement des données
+[25/12/2024 23:11:26] [INFO] Données traitées
+[25/12/2024 23:11:26] [INFO] 
+
+[25/12/2024 23:11:26] [INFO] Traitement des données
+[25/12/2024 23:11:26] [WARNING] Données reçues incorrectes
+[25/12/2024 23:11:31] [ERREUR] Impossible de recevoir les données du client
+[25/12/2024 23:11:31] [INFO] Fermeture de la connection réseaux
+[25/12/2024 23:11:31] [INFO] Initialisation de la connection réseaux
+[25/12/2024 23:11:31] [INFO] Le serveur est initialisé
+[25/12/2024 23:11:31] [INFO] Mise en écoute du serveur
+[25/12/2024 23:11:59] [INFO] Démarrage du programme
+[25/12/2024 23:11:59] [INFO] Le serveur HTTP est démarré
+[25/12/2024 23:11:59] [INFO] Initialisation de la connection réseaux
+[25/12/2024 23:11:59] [INFO] Le serveur est initialisé
+[25/12/2024 23:11:59] [INFO] Mise en écoute du serveur
+[25/12/2024 23:11:59] [INFO] T:-0.56/H:82.37/P:96668.00/G:29632.00
+[25/12/2024 23:11:59] [INFO] Traitement des données
+[25/12/2024 23:11:59] [INFO] Données traitées
+[25/12/2024 23:11:59] [INFO] 
+
+[25/12/2024 23:11:59] [INFO] Traitement des données
+[25/12/2024 23:11:59] [WARNING] Données reçues incorrectes
+[25/12/2024 23:12:30] [INFO] T:-0.54/H:81.93/P:96669.00/G:30456.00
+[25/12/2024 23:12:30] [INFO] Traitement des données
+[25/12/2024 23:12:30] [INFO] Données traitées
+[25/12/2024 23:12:30] [INFO] 
+
+[25/12/2024 23:12:30] [INFO] Traitement des données
+[25/12/2024 23:12:30] [WARNING] Données reçues incorrectes
+[25/12/2024 23:13:00] [INFO] T:-0.54/H:81.81/P:96670.00/G:31210.00
+[25/12/2024 23:13:00] [INFO] Traitement des données
+[25/12/2024 23:13:00] [INFO] Données traitées
+[25/12/2024 23:13:00] [INFO] 
+
+[25/12/2024 23:13:00] [INFO] Traitement des données
+[25/12/2024 23:13:00] [WARNING] Données reçues incorrectes
+[25/12/2024 23:13:31] [INFO] T:-0.53/H:81.95/P:96669.00/G:31638.00
+[25/12/2024 23:13:31] [INFO] Traitement des données
+[25/12/2024 23:13:31] [INFO] Données traitées
+[25/12/2024 23:13:31] [INFO] 
+
+[25/12/2024 23:13:31] [INFO] Traitement des données
+[25/12/2024 23:13:31] [WARNING] Données reçues incorrectes
+[26/12/2024 00:04:09] [INFO] Démarrage du programme
+[26/12/2024 00:04:09] [INFO] Le serveur HTTP est démarré
+[26/12/2024 00:04:09] [INFO] Initialisation de la connection réseaux
+[26/12/2024 00:04:09] [INFO] Le serveur est initialisé
+[26/12/2024 00:04:09] [INFO] Mise en écoute du serveur
+[26/12/2024 00:04:52] [INFO] Démarrage du programme
+[26/12/2024 00:04:52] [INFO] Le serveur HTTP est démarré
+[26/12/2024 00:04:52] [INFO] Initialisation de la connection réseaux
+[26/12/2024 00:04:52] [INFO] Le serveur est initialisé
+[26/12/2024 00:04:52] [INFO] Mise en écoute du serveur
+[26/12/2024 00:06:57] [INFO] Démarrage du programme
+[26/12/2024 00:06:57] [INFO] Le serveur HTTP est démarré
+[26/12/2024 00:06:57] [INFO] Initialisation de la connection réseaux
+[26/12/2024 00:06:57] [INFO] Le serveur est initialisé
+[26/12/2024 00:06:57] [INFO] Mise en écoute du serveur
+[26/12/2024 00:06:59] [INFO] T:-0.54/H:82.09/P:96669.00/G:32126.00
+[26/12/2024 00:06:59] [INFO] Traitement des données
+[26/12/2024 00:06:59] [INFO] Données traitées
+[26/12/2024 00:06:59] [INFO] 
+
+[26/12/2024 00:06:59] [INFO] Traitement des données
+[26/12/2024 00:06:59] [WARNING] Données reçues incorrectes
+[17/01/2025 21:03:11] [INFO] Démarrage du programme
+[17/01/2025 21:05:34] [INFO] Démarrage du programme
+[17/01/2025 21:05:35] [INFO] Le serveur HTTP est démarré
+[17/01/2025 21:05:35] [INFO] Initialisation de la connection réseaux
+[17/01/2025 21:05:35] [INFO] Le serveur est initialisé
+[17/01/2025 21:05:35] [INFO] Mise en écoute du serveur
