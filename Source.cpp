@@ -12,17 +12,16 @@ void test()
 {
 	while (true)
 	{
-		reseaux_initialisation();
-		reseaux_ecoute();
-		printf("test\n");
-		reseaux_fin();
-		this_thread::sleep_for(chrono::milliseconds(10));
+		int result = reseaux_ecoute();
+		this_thread::sleep_for(chrono::milliseconds(100));
 	}
 }
 
 int main()
 {
 	log_message("INFO","Démarrage du programme");
+
+	reseaux_initialisation();
 	
 	database_initialisation();
 	database_connexion();
@@ -32,6 +31,8 @@ int main()
 	thread t1(test);
 
 	t1.join();
+
+	reseaux_fin();
 
 	
 }

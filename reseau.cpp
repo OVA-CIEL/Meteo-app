@@ -73,9 +73,15 @@ int reseaux_ecoute()
 	#ifdef _WIN32 //windows
 	
 	#else //linux
-		unsigned long timeout = 50000;
+		unsigned long timeout_ms = 50000;
+		struct timeval timeout;
+		timeout.tv_sec = timeout_ms / 1000;            
+		timeout.tv_usec = (timeout_ms % 1000) * 1000;
 		int result = setsockopt(client_socket, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout));
-		printf(result);
+		char tt[100];
+		snprintf(tt, sizeof(tt), "la valeur est : %d", result);
+		log_message("TEST", tt);
+		
 	#endif
 
 	//boucle de réception des données
