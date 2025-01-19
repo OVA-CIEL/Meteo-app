@@ -197,7 +197,6 @@ void simple_data(json_object* json,double valeur)
 double complex_data(json_object* json, int* Point, int nbPoint, int ligne)
 {
     double ratio = (double)ligne / nbPoint;
-    printf("%f", ratio);
 
     if (ratio >= 1)
     {
