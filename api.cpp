@@ -55,7 +55,7 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 				json_response = erreur_data();
 			}
 			// Générer les données en JSON
-
+			
 			struct MHD_Response* response = MHD_create_response_from_buffer(strlen(json_response), (void*)json_response, MHD_RESPMEM_MUST_FREE);
 			MHD_add_response_header(response, "Content-Type", "application/json");
 			MHD_add_response_header(response, "Access-Control-Allow-Origin", "*"); // Autoriser les requetes cross-origin
