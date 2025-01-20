@@ -89,6 +89,7 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
 
                 json_object_object_add(json, "data", json_table);
 
+                json_object_put(json_table);  // Libère la mémoire de l'objet JSON
                 delete[] resultat;
             }
             else
@@ -127,6 +128,7 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
 
                 json_object_object_add(json, "data", json_table);
 
+                json_object_put(json_table);  // Libère la mémoire de l'objet JSON
                 delete[] resultat;
             }
             else
@@ -165,6 +167,7 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
 
                 json_object_object_add(json, "data", json_table);
 
+                json_object_put(json_table);  // Libère la mémoire de l'objet JSON
                 delete[] resultat;
             }
             else
