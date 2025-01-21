@@ -56,6 +56,7 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
 {
 	// Créer un objet JSON
 	json_object* json = json_object_new_object();
+    json_object* json_table = json_object_new_array();
 
 	// Ajouter les données
 
@@ -81,15 +82,12 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
                 json_object_object_add(json, "dataType", json_object_new_string("temp"));
                 json_object_object_add(json, "dataNombre", json_object_new_int(nbPoint));
 
-                json_object* json_table = json_object_new_array();
-
                 double moy = complex_data(json_table, resultat, nbPoint, ligne);
 
                 json_object_object_add(json, "dataMoyenne", json_object_new_double(moy));
 
                 json_object_object_add(json, "data", json_table);
 
-                json_object_put(json_table);  // Libère la mémoire de l'objet JSON
                 delete[] resultat;
             }
             else
@@ -120,15 +118,12 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
                 json_object_object_add(json, "dataType", json_object_new_string("humi"));
                 json_object_object_add(json, "dataNombre", json_object_new_int(nbPoint));
 
-                json_object* json_table = json_object_new_array();
-
                 double moy = complex_data(json_table, resultat, nbPoint, ligne);
 
                 json_object_object_add(json, "dataMoyenne", json_object_new_double(moy));
 
                 json_object_object_add(json, "data", json_table);
 
-                json_object_put(json_table);  // Libère la mémoire de l'objet JSON
                 delete[] resultat;
             }
             else
@@ -159,15 +154,12 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
                 json_object_object_add(json, "dataType", json_object_new_string("pres"));
                 json_object_object_add(json, "dataNombre", json_object_new_int(nbPoint));
 
-                json_object* json_table = json_object_new_array();
-
                 double moy = complex_data(json_table, resultat, nbPoint, ligne);
 
                 json_object_object_add(json, "dataMoyenne", json_object_new_double(moy));
 
                 json_object_object_add(json, "data", json_table);
 
-                json_object_put(json_table);  // Libère la mémoire de l'objet JSON
                 delete[] resultat;
             }
             else
@@ -178,15 +170,20 @@ char* get_json_data_loc(int timestampMin, int timestampMax, int nbPoint, char va
     }
 
     // Convertir l'objet JSON en chaîne de caractères
+
     const char* json_str = json_object_to_json_string(json);
-    char* json_response = (char*)malloc(strlen(json_str) + 1);
+    size_t json_str_len = strlen(json_str) + 1;  
+
+    char* json_response = (char*)malloc(json_str_len);
     if (json_response != NULL)
     {
-        strcpy(json_response, json_str);
+        strncpy(json_response, json_str, json_str_len);
+        json_response[json_str_len - 1] = '\0';
     }
 
     // Libérer la mémoire
     json_object_put(json);
+	json_object_put(json_table);
 
 	return json_response;
 }
@@ -222,7 +219,6 @@ double complex_data(json_object* json, int* Point, int nbPoint, int ligne)
             {
                 block_moyenne = block_moyenne + Point[j];
                 moyenne = moyenne + Point[j];
-                printf("%d\n",j),
                 block_nombre_interne++;
             }
 
