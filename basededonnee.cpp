@@ -78,7 +78,7 @@ int database_recup_data(const char *query, int* ligne, double** resultat)
 	for (int i = 0; i < *ligne; i++)
 	{
 		ligne_resultat = mysql_fetch_row(resultat_requete);
-		(*resultat)[i] = atoi(ligne_resultat[0]);
+		(*resultat)[i] = atof(ligne_resultat[0]);
 	}
 
 	mysql_free_result(resultat_requete);

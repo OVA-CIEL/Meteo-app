@@ -78,11 +78,11 @@ void complex_data(json_object* json, double* Point, int nbPoint, int ligne, doub
                 block_moyenne = block_moyenne + Point[j];
                 moyenne = moyenne + Point[j];
                 block_nombre_interne++;
-                if (Point[j] > *PointMax);
+                if (Point[j] > *PointMax)
                 {
                     *PointMax = Point[j];
                 }
-                if (Point[j] < *PointMin);
+                if (Point[j] < *PointMin)
                 {
                     *PointMin = Point[j];
                 }
@@ -118,11 +118,11 @@ void complex_data(json_object* json, double* Point, int nbPoint, int ligne, doub
             for (int i = 0; i < ligne; i++)
             {
                 moyenne = moyenne + Point[i];
-                if (Point[i] > *PointMax);
+                if (Point[i] > *PointMax)
                 {
                     *PointMax = Point[i];
                 }
-                if (Point[i] < *PointMin);
+                if (Point[i] < *PointMin)
                 {
                     *PointMin = Point[i];
                 }
