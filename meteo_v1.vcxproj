@@ -131,6 +131,7 @@
     <ClCompile Include="basededonnee.cpp" />
     <ClCompile Include="data.cpp" />
     <ClCompile Include="log.cpp" />
+    <ClCompile Include="message_json.cpp" />
     <ClCompile Include="reseau.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>

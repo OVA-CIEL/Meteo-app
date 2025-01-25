@@ -52,11 +52,12 @@ int database_envoie_data(int temps, int temperature, int humilite, int pression,
 	return(1);
 }
 
-int database_recup_data(const char *query, int* ligne, int** resultat)
+int database_recup_data(const char *query, int* ligne, double** resultat)
 {
 	if (mysql_query(connecteur, query) != 0)
 	{
 		log_message("ERREUR", "Impossible de récupérer les données de la base de données");
+		printf("%s", mysql_error(connecteur));
 		return(-1);
 	}
 
@@ -70,7 +71,7 @@ int database_recup_data(const char *query, int* ligne, int** resultat)
 
 	*ligne = mysql_num_rows(resultat_requete);
 
-	*resultat = new int[*ligne];
+	*resultat = new double[*ligne];
 
 	MYSQL_ROW ligne_resultat;
 

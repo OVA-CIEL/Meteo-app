@@ -9,10 +9,13 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 
 		if (strcmp(url, "/data-loc") == 0)
 		{
+
+			message_json message;
+
 			int timestampMin = 0;
 			int timestampMax = 0;
 			int nbPoint = 1;
-			char val[5];
+			char val[21];
 			char* json_response = NULL;
 
 			const char* ParamTimestampMin = MHD_lookup_connection_value(connection, MHD_GET_ARGUMENT_KIND, "timestampMin");
@@ -20,12 +23,16 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 			const char* ParamNbPoint = MHD_lookup_connection_value(connection, MHD_GET_ARGUMENT_KIND, "nbPoint");
 			const char* ParamVal = MHD_lookup_connection_value(connection, MHD_GET_ARGUMENT_KIND, "val");
 
+			bool trace_graf = true;
+
 			if (ParamTimestampMin != NULL) {
 				timestampMin = atoi(ParamTimestampMin);
 			}
 			else 
 			{
 				timestampMin = -1;
+				message.inserte_brut_live();
+				trace_graf = false;
 			}
 
 			if (ParamTimestampMax != NULL) {
@@ -34,6 +41,8 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 			else 
 			{
 				timestampMax = -1;
+				message.inserte_brut_live();
+				trace_graf = false;
 			}
 
 			if (ParamNbPoint != NULL) 
@@ -43,18 +52,22 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 			else 
 			{
 				nbPoint = 1;
+				message.inserte_brut_live();
+				trace_graf = false;
 			}
 
-			if (ParamVal != NULL)
+			if (ParamVal != NULL && trace_graf == true)
 			{
 				strcpy(val, ParamVal);
-				json_response = get_json_data_loc(timestampMin, timestampMax, nbPoint, val);
+				message.inserte_graf(timestampMin, timestampMax, nbPoint, val);
 			}
 			else
 			{
-				json_response = erreur_data();
+				message.inserte_brut_live();
 			}
 			// Générer les données en JSON
+
+			json_response = message.get_message_string();
 			
 			struct MHD_Response* response = MHD_create_response_from_buffer(strlen(json_response), (void*)json_response, MHD_RESPMEM_MUST_FREE);
 			MHD_add_response_header(response, "Content-Type", "application/json");
