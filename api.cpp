@@ -7,7 +7,7 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 
 	if (strcmp(method, "GET") == 0) {
 
-		if (strcmp(url, "/data-loc") == 0)
+		if (strcmp(url, "/data-graf") == 0)
 		{
 
 			message_json message;
@@ -27,33 +27,33 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 
 			if (ParamTimestampMin != NULL) {
 				timestampMin = atoi(ParamTimestampMin);
-			}
-			else 
-			{
-				timestampMin = -1;
-				message.inserte_brut_live();
-				trace_graf = false;
+				if (timestampMin == -1)
+				{
+					timestampMin = -1;
+					message.inserte_all_live();
+					trace_graf = false;
+				}
 			}
 
 			if (ParamTimestampMax != NULL) {
 				timestampMax = atoi(ParamTimestampMax);
-			}
-			else 
-			{
-				timestampMax = -1;
-				message.inserte_brut_live();
-				trace_graf = false;
+				if (timestampMax == -1)
+				{
+					timestampMax = -1;
+					message.inserte_brut_live();
+					trace_graf = false;
+				}
 			}
 
 			if (ParamNbPoint != NULL) 
 			{
 				nbPoint = atoi(ParamNbPoint);
-			}
-			else 
-			{
-				nbPoint = 1;
-				message.inserte_brut_live();
-				trace_graf = false;
+				if (timestampMin == 1)
+				{
+					nbPoint = 1;
+					message.inserte_brut_live();
+					trace_graf = false;
+				}
 			}
 
 			if (ParamVal != NULL && trace_graf == true)
@@ -69,6 +69,44 @@ static MHD_Result reponce_request(void* cls, struct MHD_Connection* connection, 
 
 			json_response = message.get_message_string();
 			
+			struct MHD_Response* response = MHD_create_response_from_buffer(strlen(json_response), (void*)json_response, MHD_RESPMEM_MUST_FREE);
+			MHD_add_response_header(response, "Content-Type", "application/json");
+			MHD_add_response_header(response, "Access-Control-Allow-Origin", "*"); // Autoriser les requetes cross-origin
+
+			// Envoyer la réponse
+			int ret = MHD_queue_response(connection, MHD_HTTP_OK, response);
+
+			MHD_destroy_response(response);
+
+			return MHD_YES;
+		}
+		else if (strcmp(url, "/data-brut-live") == 0)
+		{
+			char* json_response = NULL;
+			message_json message;
+
+			message.inserte_brut_live();
+			json_response = message.get_message_string();
+
+			struct MHD_Response* response = MHD_create_response_from_buffer(strlen(json_response), (void*)json_response, MHD_RESPMEM_MUST_FREE);
+			MHD_add_response_header(response, "Content-Type", "application/json");
+			MHD_add_response_header(response, "Access-Control-Allow-Origin", "*"); // Autoriser les requetes cross-origin
+
+			// Envoyer la réponse
+			int ret = MHD_queue_response(connection, MHD_HTTP_OK, response);
+
+			MHD_destroy_response(response);
+
+			return MHD_YES;
+		}
+		else if (strcmp(url, "/data-all-live") == 0)
+		{
+			char* json_response = NULL;
+			message_json message;
+
+			message.inserte_all_live();
+			json_response = message.get_message_string();
+
 			struct MHD_Response* response = MHD_create_response_from_buffer(strlen(json_response), (void*)json_response, MHD_RESPMEM_MUST_FREE);
 			MHD_add_response_header(response, "Content-Type", "application/json");
 			MHD_add_response_header(response, "Access-Control-Allow-Origin", "*"); // Autoriser les requetes cross-origin

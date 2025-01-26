@@ -67,8 +67,8 @@ void message_json::inserte_graf(int timestampMin, int timestampMax, int nbPoint,
 		pointMax = new double;
 
 		*moyenne = 0;
-		*pointMin = 0;
-		*pointMax = 0;
+		*pointMin = 100;
+		*pointMax = -50;
 		
 		complex_data(json_data_table, resultat, nbPoint, ligne, moyenne, pointMin, pointMax);
 
@@ -98,9 +98,9 @@ void message_json::inserte_brut_live()
 		json_object_object_add(json_table, "data_type", json_object_new_string("data_brut_live"));
 		json_object_object_add(json_table, "data_time", json_object_new_int(meteo_data_time));
 
-		json_object_object_add(json_data_table, "temperature", json_object_new_double(meteo_data_temperature));
-		json_object_object_add(json_data_table, "humidite", json_object_new_double(meteo_data_humidite));
-		json_object_object_add(json_data_table, "pression", json_object_new_double(meteo_data_pression));
+		json_object_object_add(json_data_table, "temperature", json_object_new_double((float)meteo_data_temperature / 100));
+		json_object_object_add(json_data_table, "humidite", json_object_new_double((float)meteo_data_humidite / 100));
+		json_object_object_add(json_data_table, "pression", json_object_new_double((float)meteo_data_pression / 100));
 		json_object_object_add(json_data_table, "gaz_resistance", json_object_new_int(meteo_data_gaz));
 
 		json_object_object_add(json_table, "data", json_data_table);
@@ -120,7 +120,7 @@ void message_json::inserte_all_live()
 
 		float data_temperature = (float)meteo_data_temperature / 100;
 		float data_humidite = (float)meteo_data_humidite / 100;
-		float data_pression = (float)meteo_data_pression;
+		float data_pression = (float)meteo_data_pression / 100;
 		int data_gaz = meteo_data_gaz;
 		double data_point_rosee = -1;
 		double data_humidex = -1;
@@ -152,7 +152,9 @@ void message_json::inserte_all_live()
 		const double R = 8.3144598; // Constante universelle des gaz parfaits (J/(mol·K))
 		const double M = 0.0289644; // Masse molaire de l'air (kg/mol)
 
-		double data_pression_niveau_mer = data_pression * pow(1 - (L * data_altitude / T0), -g * M / (R * L));
+		double pression_en_Pa = data_pression * 100; // Conversion de hPa en Pa
+		double data_pression_niveau_mer = pression_en_Pa * pow(1 - (L * data_altitude / T0), -g * M / (R * L));
+		data_pression_niveau_mer = data_pression_niveau_mer / 100; // Conversion inverse en hPa
 
 		double data_IAQ = 100 * (data_gaz / 10000);
 
@@ -162,7 +164,7 @@ void message_json::inserte_all_live()
 		json_object_object_add(json_data_table, "temperature", json_object_new_double(data_temperature));
 		json_object_object_add(json_data_table, "humidite", json_object_new_double(data_humidite));
 		json_object_object_add(json_data_table, "pression", json_object_new_double(data_pression));
-		json_object_object_add(json_data_table, "pression_niveau_mer", json_object_new_double(data_point_rosee));
+		json_object_object_add(json_data_table, "pression_niveau_mer", json_object_new_double(data_pression_niveau_mer));
 		json_object_object_add(json_data_table, "gaz", json_object_new_int(data_gaz));
 		json_object_object_add(json_data_table, "data_point_rosee", json_object_new_double(data_point_rosee));
 		json_object_object_add(json_data_table, "data_humidex", json_object_new_double(data_humidex));
@@ -183,4 +185,18 @@ void message_json::inserte_future()
 
 void message_json::inserte_erreur()
 {
+	if (this->erreur == false)
+	{
+		json_object* json_table = json_object_new_object();
+
+		json_object_object_add(json_table, "data_type", json_object_new_string("erreur"));
+		json_object_object_add(json_table, "data", json_object_new_string("Une erreur est apparue. Si l'erreur ne provient pas de vous, veuillez me contacter à l'adresse hugooval01@gmail.com"));
+
+		json_object_array_add(json_base_table, json_table);
+
+		this->erreur = true;
+		this->all_live = true;
+		this->brut_live = true;
+		this->future = true;
+	}
 }
