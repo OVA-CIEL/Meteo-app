@@ -8,27 +8,31 @@ int meteo_data_humidite = 0;
 int meteo_data_pression = 0;
 int meteo_data_gaz = 0;
 
-void test()
+bool boucle_ecoute = true;
+
+void reseaux()
 {
-	while (true)
+	while (reseaux_initialisation() == -1)
+	{
+		this_thread::sleep_for(chrono::milliseconds(100));
+	}
+	while (boucle_ecoute)
 	{
 		int result = reseaux_ecoute();
-		this_thread::sleep_for(chrono::milliseconds(100));
+		this_thread::sleep_for(chrono::milliseconds(1000));
 	}
 }
 
 int main()
 {
 	log_message("INFO","Démarrage du programme");
-
-	reseaux_initialisation();
 	
 	database_initialisation();
 	database_connexion();
 
 	http_api();
 
-	thread t1(test);
+	thread t1(reseaux);
 
 	t1.join();
 

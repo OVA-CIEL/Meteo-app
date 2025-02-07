@@ -73,7 +73,7 @@ int reseaux_ecoute()
 	#ifdef _WIN32 //windows
 	
 	#else //linux
-		unsigned long timeout_ms = 50000;
+		unsigned long timeout_ms = 40000;
 		struct timeval timeout;
 		timeout.tv_sec = timeout_ms / 1000;            
 		timeout.tv_usec = (timeout_ms % 1000) * 1000;
